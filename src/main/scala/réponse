@@ -1,0 +1,59 @@
+1) Explain REST and RESTful
+
+Representational state transfer (REST) is a style of software architecture.
+REST is an "architectural style" that basically exploits the existing technology and protocols of the Web.
+RESTful is typically used to refer to web services implementing such an architecture.
+
+2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
+The client would invoke a series of web service calls via requests to a server which would host the actual web service.
+These requests are made through what is known as remote procedure calls. Remote Procedure Calls(RPC) are calls made to methods
+which are hosted by the relevant web service.
+
+The main component of a web service is the data which is transferred between the client and the server, and that is XML. XML (Extensible markup language)
+is a counterpart to HTML and easy to understand the intermediate language that is understood by many programming languages.
+
+Web services use something known as SOAP (Simple Object Access Protocol) for sending the XML data between applications.
+The data is sent over normal HTTP. The data which is sent from the web service to the application is called a SOAP message.
+The SOAP message is nothing but an XML document. Since the document is written in XML, the client application calling the web service can be written in any programming language.
+
+A web service architecture consists of the following layers:
+Service Provider: Service provider is responsible for creating the web service and making it accessible to the client applications over the internet.
+Service Requestor: Service requestor is basically any client application which is accessing the web service.
+Service Registry: Service registry is act as the centralized directory for the web services which helps to find web services for client applications.
+
+3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+GET to retreive data from a server at the specified resource.
+POST requests are used to send data to the API sever to create or udpate a resource.
+PUT are used to send data to the API to create or update a resource. The difference with POST is that PUT requests are idempotent.
+PATCH is that you only apply partial modifications to the resource.
+DELETE delete the resource at the specified URL.
+HEAD  useful for checking what a GET request will return before actually making a GET request -- like before downloading a large file or response body.
+OPTIONS request should return data describing what other methods and operations the server supports at the given URL.
+
+4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
+*In a Stateless Protocol, no information about a transaction is maintained after a transaction is processed.
+*In a Stateful Protocol, state information is kept even after a transaction has been processed.
+
+*A stateless server does not keep state between connections. So, When you send a request to a stateless server, it does not create any objects that track information regarding your requests.
+*A stateful server keeps state of connections.
+
+*Client send request to the server and server response back according to current state.
+*If client send a request to the server then it expects some kind of response, if it does not get any response then resend request.
+
+*Stateless Protocols can generally handle transactions speedily.
+*Stateful Protocols handle transactions slower.
+
+*Stateless Ex. UDP , HTTP etc.
+*Stateful Ex. FTP, Telnet.
+5) Explain the difference between a GET and a POST (like how are sent the parameters)
+
+* GET method passes request parameter in URL String while POST method passes request parameter in request body.
+* GET request can only pass limited amount of data while POST method can pass large amount of data to server.
+* GET request can be bookmarked and cached unlike POST requests.
+* GET is mostly used for view purpose (e.g. SQL SELECT) while POST is mainly use for update purpose (e.g. SQL INSERT or UPDATE).
+
+6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+I WAS BACKEND MANAGER ,WHEN I WORKED WITH BACKEND  I HAVE TO SOLVE TECHNICAL AND BUSINESS PROBLEMS BY MY SELF IF I MET PROBLEM WHICH I HAVE NOT SOLUTION
+SO IN THIS TIME I PASS TO CREATING SOLUTION BY TRYING CODE AND SEE THE BEHAVIOR OF THE SOLUTION OR I CAN TRY TO SEE SOLUTIONS IN THE NET BY THE END YOU
+HAVE TO FIND SOLUTION IT S THE ONLY DESTINATION
+(I HAVE MET THIS SITUATION ALOT WHEN I WAS IN LOYALCRAFT)
